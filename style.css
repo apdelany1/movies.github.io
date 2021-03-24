@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Maven+Pro&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height:100vh;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background-image: url(60-lines.png), linear-gradient(to left, #c9d6ff, #e2e2e2);
+    display: flex;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 128, 128, 0.534);
+    border-bottom-width: 5px;
+    border-color: rgba(210, 105, 30, 0.103);
+    border-bottom-style: double;
+}
+
+.logo {
+    width: 50px;
+    float: left;
+    margin: 15px 65px;
+    cursor:crosshair;
+}
+
+.navbar h1 {
+    color: rgba(25, 51, 201, 0.774);
+    margin-left: 40%;
+    padding: 20px;
+    font-family: 'Maven Pro', cursive;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 20px;
+    font-style: italic;
+}
+
+.maincontent {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    padding: 120px;
+    background-image: url(60-lines.png), linear-gradient(to top, #108dc7, #ef8e38); 
+    border-radius: 40px;
+    border: 2px double rgba(0, 255, 255, 0.664);
+    cursor: pointer;
+}
+
+.maincontent h1 {
+    color: rgb(231, 212, 171);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 10rem;
+    text-transform: lowercase;
+    text-decoration: overline;
+    text-decoration-style: dotted;
+    text-decoration-color: #d8a8c8;
+    text-shadow: 4px 4px 10px rgba(0, 105, 243, 0.466);
+}
+
+span:hover {
+    cursor: crosshair;
+}
+
+
