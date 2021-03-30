@@ -67,4 +67,26 @@ span:hover {
     cursor: crosshair;
 }
 
+@media screen and (max-width: 1100px)
+{
+  
+  .navbar h1 {
+    font-size: 1rem;
+  }
+  .maincontent {
+    width: 50px;
+  }
+  
+  .maincontent h1 {
+    font-size: 50px;
+    position: absolute; 
+    left: 15%
+  }
+  .maincontent .watch {
+    font-size: 50px;
+    position: absolute; 
+    left: 15%
+  }
+}
+
 
