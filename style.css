@@ -9,17 +9,20 @@
     width: 100vw;
     height:100vh;
     background: #C9D6FF;  /* fallback for old browsers */
-    background-image: url(60-lines.png), linear-gradient(to left, #c9d6ff, #e2e2e2);
+    background-image: url(pexels-donald-tong-109669.jpg), linear-gradient(to left, #c9d6ff, #e2e2e2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
 }
 
 .navbar {
     height: 80px;
     width: 100%;
-    background-color: rgba(0, 128, 128, 0.534);
+    background-color: rgba(12, 4, 1, 0.884);
     border-bottom-width: 5px;
     border-color: rgba(210, 105, 30, 0.103);
     border-bottom-style: double;
+    position: fixed;
 }
 
 .logo {
@@ -30,13 +33,13 @@
 }
 
 .navbar h1 {
-    color: rgba(25, 51, 201, 0.774);
+    color: rgba(226, 21, 21, 0.774);
     margin-left: 40%;
     padding: 20px;
     font-family: 'Maven Pro', cursive;
     font-size: 2rem;
     letter-spacing: 5px;
-    text-shadow: 3px 3px 20px;
+    text-shadow: 7px 7px 10px;
     font-style: italic;
 }
 
@@ -45,10 +48,11 @@
     top: 18%;
     left: 20%;
     padding: 120px;
-    background-image: url(60-lines.png), linear-gradient(to top, #108dc7, #ef8e38); 
+    background-image: url(60-lines.png), linear-gradient(to top, #000608c4, #0f0801bd); 
     border-radius: 40px;
-    border: 2px double rgba(0, 255, 255, 0.664);
+    border: 2px double rgba(230, 11, 11, 0.664);
     cursor: pointer;
+    position: fixed;
 }
 
 .maincontent h1 {
@@ -59,7 +63,7 @@
     text-transform: lowercase;
     text-decoration: overline;
     text-decoration-style: dotted;
-    text-decoration-color: #d8a8c8;
+    text-decoration-color: #81260f;
     text-shadow: 4px 4px 10px rgba(0, 105, 243, 0.466);
 }
 
@@ -67,26 +71,129 @@ span:hover {
     cursor: crosshair;
 }
 
-@media screen and (max-width: 1100px)
-{
-  
-  .navbar h1 {
-    font-size: 1rem;
-  }
-  .maincontent {
-    width: 50px;
-  }
-  
-  .maincontent h1 {
-    font-size: 50px;
-    position: absolute; 
-    left: 15%
-  }
-  .maincontent .watch {
-    font-size: 50px;
-    position: absolute; 
-    left: 15%
-  }
+p {
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.recommended img {
+    width: 120px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.reccomended {
+    color: rgb(181, 184, 12);
+    align-self: flex-end;
+    position: relative;
+    left: 30%;
+    top: -170px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+.reccomended:hover {
+    transform: scale(.97);
+}
+
+.reccomended a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.reccomended a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 
+@media only screen and (max-width: 900px) {
+    .maincontent {
+        width: 200px;
+        height: 200px;
+    }
+
+    .maincontent h1 {
+        font-size: 55px;
+        text-align: left;
+    }
+
+
+    .maincontent h1 {
+        position:absolute;
+        left: 20px;
+        top: 100px;
+    }
+
+    .maincontent p {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .navbar h1 {
+        font-size: 15px;
+        text-align:left;
+        position: relative;
+        top: -60px;
+        left:-40px;
+    }
+
+}
+
+#recnav {
+    cursor: pointer;
+}
+
+.moviebox {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.cards img {
+    width: 350px;
+    height: 100%;
+
+}
+
+@media only screen and (max-width: 1044px) {
+
+    .cards img {
+        width: 150px;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 836px) {
+
+    .navbar h1 {
+        font-size: 1em;
+    }
+
+    .cards {
+        height: 100vh;
+        display: flex;
+        margin-top: 55px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
